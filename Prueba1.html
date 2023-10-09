@@ -12,8 +12,18 @@
  			 p {color: blue;}
 		</style>
 	</head>
-	<body>
-		<h1>Hola Mundo</h1>
+	<body onload="saludo()">
+		<h1 id="título" onclick="cambia_color()">Hola Mundo</h1>
 		<p>Amaro es capillita</p>
+	 <script>
+	 	function saludo(){
+	 		alert("Bienvenido");
+	 	}
+	 	function cambia_color(){
+	 		document.getElementById("título").style.
+	 		color="darkgreen"
+	 	}
+	 	
+	 </script>
 	</body>
 <html>

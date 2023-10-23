@@ -6,23 +6,23 @@
 	<title>Ejercicio 6</title>
 </head>
 <body>
-	<form action="https://www.w3schools.com/action_page.php" method="post">
+	<form action="https://lm.ciclo.iesnervion.es/" method="post">
     <fieldset>
-        <legend>RECETA</legend>
-        <label for="nombre">Nombre: </label>
-        <input name="nombre" id="nombre" type="text"><br>
+        <legend><b>RECETA</b></legend>
+        <label for="nombre">Nombre del plato:</label>
+        <input type="text" name="nombre" title="Escriba el nombre" placeholder="Ingrese el nombre" required><br>
         <label for="correo">Correo:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="correo" name="correo" title="Escriba el correo" placeholder="nombre@gmail.com" required >
             <br><br>
-        <label>Momento: </label>
-        <input name="momento" type="checkbox" value="desayuno"> Desayuno
-        <input name="momento" type="checkbox" value="almuerzo"> Almuerzo
-        <input name="momento" type="checkbox" value="merienda"> Merienda
-        <input name="momento" type="checkbox" value="cena"> Cena
-        <input name="momento" type="checkbox" value="postre"> Postre
+        <label><b>Momento:</b> </label>
+        <input name="momento[]" type="checkbox" value="Desayuno"> Desayuno
+        <input name="momento[]" type="checkbox" value="Almuerzo"> Almuerzo
+        <input name="momento[]" type="checkbox" value="Merienda"> Merienda
+        <input name="momento[]" type="checkbox" value="Cena"> Cena
+        <input name="momento[]" type="checkbox" value="Postre"> Postre
         <br><br>
-        <select name="tiempo" id="tiempo">
-        	<option></option>
+        <label><b>Ingredientes:</b> </label>
+        <select multiple style="height: 150px;" name="ingredientes[]" id="ingredientes[]" >
             <optgroup label="Carne">
                 <option>Pollo</option>
                 <option>Vacuno</option>
@@ -33,10 +33,39 @@
                 <option>Atún</option>
                 <option>Bacalao</option>
             </optgroup>
+            <optgroup label="Verduras">
+                <option>Ciruela</option>
+                <option>Limón</option>
+                <option>Zanahoria</option>
+            </optgroup>
+            <optgroup label="Frutas">
+                <option>Naranja</option>
+                <option>Manzana</option>
+                <option>Pera</option>
+            </optgroup>
         </select><br><br>
-        <br><br>
-      
+        <label><b>Horas:</b> </label> 
+<input type="radio" id="horas" name="horas" value="0 ">
+<label for="horas">0 h</label>
+<input type="radio" id="horas" name="horas" value="1">
+<label for="horas">1 h</label>
+<input type="radio" id="horas" name="horas" value="2">
+<label for="horas">2 h</label>
+<br>
+<label><b>Minutos:</b> </label> 
+<input type="radio" id="minutos" name="minutos" value="0 ">
+<label for="minutos">0 minutos</label>
+<input type="radio" id="minutos" name="minutos" value="15">
+<label for="minutos">15 minutos</label>
+<input type="radio" id="minutos" name="minutos" value="30">
+<label for="minutos">30 minutos</label>
+<input type="radio" id="minutos" name="minutos" value="45">
+<label for="minutos">45 minutos</label>
 </form>
-
+<br><br>
+<label><b>Ingrese una imagen</b> (opcional)</label>
+<input type="file" name="foto" value="foto" accept="image/*">
+<br><br>
+<button type="submit">Enviar</button>
 </body>
 </html>

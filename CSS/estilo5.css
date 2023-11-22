@@ -1,0 +1,13 @@
+.columna {
+	display: inline-flex;
+	border: 1px solid;
+	background-color: lightblue;
+	width: 30%;
+	margin: 10px;
+	padding: 5px;
+	justify-content: center;
+}
+
+#div1, #div2, #div3, #div4, #div5, #div6 {
+
+} 

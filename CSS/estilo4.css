@@ -1,0 +1,9 @@
+div {
+	border: 2px solid;
+	background-color: coral;
+	padding: 10px;
+	margin: 20px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}

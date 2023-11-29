@@ -1,4 +1,4 @@
-div {
+.menu {
 	border: 2px solid;
 	background-color: coral;
 	padding: 10px;
@@ -6,4 +6,14 @@ div {
 	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    background: blue;
+    font-size: 10px;
+    margin: 20px;
+    padding: 5px;
+  }
 }

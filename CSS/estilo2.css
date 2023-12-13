@@ -6,14 +6,14 @@
 
 #div1 {
 	border: 2px solid red;
-	background-image: url('../img/RubenCastro.jpg');
+	background-image: url('img/RubenCastro.jpg');
 	background-position: center;
 	background-size: 100px 50px;
 	background-repeat: no-repeat;
 }
 #div2 {
 	border: 2px solid blue;
-	background-image: url('../img/RubenCastro.jpg');
+	background-image: url('img/RubenCastro.jpg');
 	background-position: bottom;
 	background-size: 100px 50px;
 	background-repeat: repeat-x;
@@ -22,7 +22,7 @@
 }
 #div3 {
 	border: 2px solid green;
-		background-image: url('../img/RubenCastro.jpg');
+		background-image: url('img/RubenCastro.jpg');
 	background-position: right;
 	background-size: 100px 50px;
 	background-repeat: repeat-y;
